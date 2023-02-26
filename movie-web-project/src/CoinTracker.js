@@ -20,21 +20,21 @@ function CoinTraker() {
       ) : (
         <ul>
           {coins.map((coin) => (
-            <div className="coin-box">
-              <li key={coin.id}>
-                <a
-                  rel="noreferrer"
-                  href={`https://coinpaprika.com/ko/coin/${coin.id}/`}
-                  target="_blank"
-                >
-                  {coin.name} ({coin.symbol}):{" "}
-                </a>
-                {Math.round(coin.quotes.USD.price)
-                  .toString()
-                  .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                USD
-              </li>
-            </div>
+            <li key={coin.id}>
+              <a
+                rel="noreferrer"
+                href={`https://coinpaprika.com/ko/coin/${coin.id}/`}
+                target="_blank"
+              >
+                <div className="coin-box">
+                  {coin.name} ({coin.symbol}):{""}
+                  {Math.round(coin.quotes.USD.price)
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                  USD
+                </div>
+              </a>
+            </li>
           ))}
         </ul>
       )}

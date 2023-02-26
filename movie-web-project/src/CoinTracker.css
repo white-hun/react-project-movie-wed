@@ -1,14 +1,19 @@
 ul {
   list-style: none;
 }
+li {
+  width: 400px;
+}
 a {
   text-decoration-line: none;
+  font-size: 20px;
   color: inherit;
 }
 .coin-box:hover {
   transition: 0.3s;
   scale: 1.03;
-  border: 2px solid royalblue;
+  border: 1.6px solid royalblue;
+  will-change: transform;
 }
 .coin-box {
   display: flex;

@@ -1,13 +1,20 @@
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   // <React.StrictMode>
+//   <RecommendMovie />
+//   // </React.StrictMode>
+// );
+//-------------------------------------------------------------------
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App";
-// import CleanUp from "./Cleanup";
-// import ToDo from "./ToDo";
-import CoinTraker from "./CoinTracker";
+import { RouterProvider } from "react-router-dom";
+import main from "./main";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <CoinTraker />
+  <RouterProvider router={main} />
   // </React.StrictMode>
 );
