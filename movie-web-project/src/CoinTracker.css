@@ -1,0 +1,10 @@
+a {
+  text-decoration-line: none;
+  color: inherit;
+  transition: 0.3s;
+}
+a:hover {
+  transition: 0.3s;
+  font-size: 18px;
+  color: royalblue;
+}
