@@ -12,7 +12,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import main from "./main";
+import main from "./Main";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>

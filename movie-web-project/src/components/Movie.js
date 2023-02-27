@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Movie.css";
 
-export default function Movie({ coverImg, title, summary, genres }) {
+export default function Movie({ id, coverImg, title, summary, genres }) {
   return (
     <div>
       <h2>
-        <Link to="/movie" className="link">
+        <Link to={`/movie/${id}`} className="link">
           {title}
         </Link>
       </h2>
@@ -22,8 +22,11 @@ export default function Movie({ coverImg, title, summary, genres }) {
 }
 
 Movie.propTypes = {
+  id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
+
+// Link: 새로고침 하지않고 페이지 이동
