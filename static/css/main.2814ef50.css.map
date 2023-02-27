@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2814ef50.css","mappings":"AAAA,GACE,eACF,CACA,GACE,UAAW,CACX,iBACF,CACA,MAEE,aAAc,CADd,oBAEF","sources":["components/Movie.css"],"sourcesContent":["ul {\r\n  list-style: none;\r\n}\r\nli {\r\n  float: left;\r\n  margin-right: 12px;\r\n}\r\n.link {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n"],"names":[],"sourceRoot":""}
